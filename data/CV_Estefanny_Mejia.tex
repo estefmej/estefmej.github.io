@@ -1,0 +1,89 @@
+% CV de Estefanny Mejía
+% Compila con pdfLaTeX (por ejemplo, en Overleaf).
+\documentclass[10.5pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,margin=2cm,top=1.8cm]{geometry}
+\usepackage[sc]{mathpazo}          % Palatino para títulos
+\usepackage[scaled=0.92]{helvet}   % Helvetica para el texto
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+% Colores del sitio web
+\definecolor{tinta}{HTML}{4A2A33}
+\definecolor{vino}{HTML}{8A4B5A}
+\definecolor{oro}{HTML}{B97A6D}
+\definecolor{suave}{HTML}{6E585D}
+\definecolor{linea}{HTML}{ECC9CC}
+\color{tinta}
+
+\newcommand{\serif}[1]{{\fontfamily{ppl}\selectfont #1}}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\raggedright
+\setlist[itemize]{leftmargin=1.2em, itemsep=2pt, topsep=3pt, label={\color{oro}\textbullet}}
+
+% Títulos de sección
+\titleformat{\section}
+  {\fontfamily{ppl}\selectfont\Large\color{vino}}
+  {}{0pt}{}[{\color{linea}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{14pt}{7pt}
+
+% Entrada: título, institución y fecha opcional a la derecha
+\newcommand{\entrada}[3]{%
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    \serif{\large #1} & {\small\color{oro}#3}\\
+    {\color{suave}#2} & \\
+  \end{tabularx}\vspace{4pt}}
+
+\begin{document}
+
+% Encabezado
+\begin{center}
+  {\fontfamily{ppl}\selectfont\fontsize{30}{34}\selectfont Estefanny Mejía}\\[4pt]
+  {\small\color{oro}ECONOMISTA \,·\, DATA SCIENCE}\\[6pt]
+  {\small\color{suave}\href{https://github.com/estefmej}{github.com/estefmej} \quad|\quad \href{https://estefmej.github.io}{estefmej.github.io}}
+\end{center}
+
+\section{Perfil}
+Economista de la Universidad Continental con 6 años de experiencia. Trabajé como consultora en la
+Organización Panamericana de la Salud (OPS). Actualmente curso el Diplomado de Data Science de la PUCP,
+donde convierto datos públicos del Perú en análisis reproducibles, mapas y dashboards.
+
+\section{Experiencia}
+\entrada{Consultora}{Organización Panamericana de la Salud (OPS)}{}
+
+\section{Formación}
+\entrada{Diplomado en Data Science}{Pontificia Universidad Católica del Perú (PUCP)}{En curso}
+\entrada{Economía}{Universidad Continental}{}
+
+\section{Proyectos}
+\serif{\large ¿Tener red pública garantiza agua segura en el Perú?}
+\begin{itemize}
+  \item Reconstruí el indicador ODS 6.1.1 con microdatos de la ENAPRES 2019--2025 y lo validé contra las cifras oficiales del MVCS y el INEI.
+  \item El agua segura cayó de 41,5\,\% a 36,6\,\%; el cloro, no la red, es el cuello de botella. Dashboard interactivo por departamento.
+\end{itemize}
+\vspace{4pt}
+\serif{\large El fuego y el agua}
+\begin{itemize}
+  \item Crucé focos de calor 2012--2026 con las zonas que producen agua y medí áreas quemadas con Sentinel-2.
+  \item El 24\,\% de los focos de la temporada 2026 cayó en esas zonas; Puno concentra 4.011. Dashboard publicado en GitHub Pages.
+\end{itemize}
+\vspace{4pt}
+\serif{\large Pobreza monetaria con la ENAHO 2024}
+\begin{itemize}
+  \item Pipeline automatizado de descarga, limpieza, gráficos y mapas que reproduce las cifras del INEI: 27,6\,\% nacional; 39,3\,\% rural y 24,8\,\% urbano.
+\end{itemize}
+
+\section{Herramientas}
+Python \,·\, R \,·\, Power BI \,·\, Stata \,·\, QGIS \,·\, Streamlit \,·\, Mapas y GIS \,·\, Claude Code \,·\, Git y GitHub
+
+\vspace{4pt}
+{\color{suave}Datos con los que trabajo: microdatos del INEI (ENAHO, ENAPRES), imágenes satelitales (Sentinel-2) y focos de calor (NASA FIRMS, INPE).}
+
+\end{document}
