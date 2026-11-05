@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="stylesheet.css?v=3">
+<link rel="stylesheet" href="stylesheet.css?v=6">
 </head>
 <body>
 <main>
@@ -30,27 +30,36 @@
       <h2>Proyectos de análisis</h2>
       <p class="desc">Investigaciones con microdatos públicos del Perú y datos satelitales. Cada una parte de una pregunta y llega a un resultado que se puede verificar.</p>
     </div>
-    <div class="pcards">
-      <article class="pcard">
-        <a class="pic" href="proyectos/agua-segura/"><img src="images/agua-card.webp" alt="Mapa del Perú con el indicador de agua segura por departamento" loading="lazy"></a>
-        <h3><a href="proyectos/agua-segura/">¿Tener red pública garantiza agua segura?</a></h3>
-        <p><span class="lbl">Pregunta:</span> ¿Qué criterio frena el ODS 6.1.1: la red, la continuidad o el cloro?</p>
-        <p><span class="lbl">Resultado:</span> el indicador cayó de 41,5 % (2019) a 36,6 % (2025); el cloro es el cuello de botella.</p>
-        <div class="pills"><a class="pill" href="proyectos/agua-segura/">Ver proyecto</a><a class="pill gh-only" href="https://github.com/estefmej/Tarea_3" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a><a class="pill" href="demo/agua-segura/">Dashboard</a><a class="pill" href="#reels">Reel</a></div>
+    <div class="hcards">
+      <article class="hcard">
+        <a class="hpic" href="proyectos/agua-segura/"><img src="images/agua-card.webp" alt="Mapa del Perú con el indicador de agua segura por departamento" loading="lazy"></a>
+        <div class="hbody">
+          <h3><a href="proyectos/agua-segura/">¿Tener red pública garantiza agua segura en el Perú?</a></h3>
+          <p class="hq">¿Qué criterio frena el ODS 6.1.1: la red, la continuidad del servicio o el cloro?</p>
+          <div class="hres">El agua segura cayó de <b>41,5 %</b> a <b>36,6 %</b> entre 2019 y 2025: <b>2,7 millones</b> de personas más sin ella. El cuello de botella es el cloro, no la red.</div>
+          <div class="tags"><span class="tag">ENAPRES</span><span class="tag">pandas</span><span class="tag">D3.js</span></div>
+          <div class="btns"><a class="btn-o" href="proyectos/agua-segura/">Ver proyecto</a><a class="btn-o" href="demo/agua-segura/">Dashboard</a><a class="btn-o gh-btn" href="https://github.com/estefmej/Tarea_3" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a></div>
+        </div>
       </article>
-      <article class="pcard">
-        <a class="pic" href="proyectos/fuego-y-agua/"><img src="images/fuego-mapa.webp" alt="Mapa de las zonas que producen agua en el Perú" loading="lazy"></a>
-        <h3><a href="proyectos/fuego-y-agua/">El fuego y el agua</a></h3>
-        <p><span class="lbl">Pregunta:</span> ¿Cuánto del fuego de 2026 cae sobre las zonas que producen agua?</p>
-        <p><span class="lbl">Resultado:</span> el 24 % de los focos de la temporada; Puno concentra 4.011.</p>
-        <div class="pills"><a class="pill" href="proyectos/fuego-y-agua/">Ver proyecto</a><a class="pill gh-only" href="https://github.com/estefmej/fuego-y-agua" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a><a class="pill" href="demo/fuego-y-agua/">Dashboard</a><a class="pill" href="#reels">Reel</a></div>
+      <article class="hcard">
+        <a class="hpic" href="proyectos/fuego-y-agua/"><img src="images/fuego-mapa.webp" alt="Mapa de las zonas que producen agua en el Perú" loading="lazy"></a>
+        <div class="hbody">
+          <h3><a href="proyectos/fuego-y-agua/">El fuego y el agua, 2026</a></h3>
+          <p class="hq">¿Cuánto del fuego de la temporada 2026 cae sobre las zonas que producen agua?</p>
+          <div class="hres">El <b>24 %</b> de los focos de calor cayó en zonas que producen agua: 32.701 de 135.171. Puno concentra <b>4.011</b>.</div>
+          <div class="tags"><span class="tag">NASA FIRMS</span><span class="tag">Sentinel-2</span><span class="tag">geopandas</span><span class="tag">rasterio</span></div>
+          <div class="btns"><a class="btn-o" href="proyectos/fuego-y-agua/">Ver proyecto</a><a class="btn-o" href="demo/fuego-y-agua/">Dashboard</a><a class="btn-o gh-btn" href="https://github.com/estefmej/fuego-y-agua" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a></div>
+        </div>
       </article>
-      <article class="pcard">
-        <a class="pic" href="proyectos/pobreza-enaho/"><img src="images/enaho-mapa.webp" alt="Mapa de pobreza monetaria por departamento, 2024" loading="lazy"></a>
-        <h3><a href="proyectos/pobreza-enaho/">Pobreza monetaria con la ENAHO 2024</a></h3>
-        <p><span class="lbl">Pregunta:</span> ¿Se pueden reproducir las cifras oficiales de pobreza con un pipeline automatizado?</p>
-        <p><span class="lbl">Resultado:</span> sí: 27,6 % nacional, igual al INEI; rural 39,3 % vs. urbano 24,8 %.</p>
-        <div class="pills"><a class="pill" href="proyectos/pobreza-enaho/">Ver proyecto</a><a class="pill gh-only" href="https://github.com/estefmej/Tarea_enaho" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a></div>
+      <article class="hcard">
+        <a class="hpic" href="proyectos/pobreza-enaho/"><img src="images/enaho-mapa.webp" alt="Mapa de pobreza monetaria por departamento, 2024" loading="lazy"></a>
+        <div class="hbody">
+          <h3><a href="proyectos/pobreza-enaho/">Pobreza monetaria con la ENAHO 2024</a></h3>
+          <p class="hq">¿Se pueden reproducir las cifras oficiales de pobreza con un pipeline automatizado?</p>
+          <div class="hres">Sí: el pipeline reproduce el <b>27,6 %</b> del INEI. La pobreza rural (<b>39,3 %</b>) supera a la urbana (<b>24,8 %</b>).</div>
+          <div class="tags"><span class="tag">ENAHO</span><span class="tag">pandas</span><span class="tag">geopandas</span><span class="tag">Claude Code</span></div>
+          <div class="btns"><a class="btn-o" href="proyectos/pobreza-enaho/">Ver proyecto</a><a class="btn-o gh-btn" href="https://github.com/estefmej/Tarea_enaho" aria-label="Código en GitHub" title="Código en GitHub"><svg class="gh" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg></a></div>
+        </div>
       </article>
     </div>
   </section>
@@ -72,34 +81,6 @@
       <li><span class="ti"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg></span>Claude Code</li>
       <li><span class="ti"><svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span>Git y GitHub</li>
     </ul>
-  </section>
-
-  <section id="reels">
-    <div class="shead">
-      <p class="kicker">VIDEOS</p>
-      <h2>Reels de divulgación</h2>
-      <p class="desc">Versiones cortas de mis proyectos para que cualquier persona entienda los hallazgos en menos de un minuto.</p>
-    </div>
-    <div class="reels">
-      <figure class="reel" style="margin:0">
-        <video controls preload="none" playsinline poster="images/poster-agua-segura.webp">
-          <source src="videos/reel-agua-segura.mp4" type="video/mp4">
-          Tu navegador no puede reproducir este video.
-        </video>
-        <h3>¿Tener red es tener agua segura?</h3>
-        <p>Solo 37 de cada 100 peruanos tienen agua segura. ENAPRES 2025.</p>
-        <span class="badge">Voz generada con IA</span>
-      </figure>
-      <figure class="reel" style="margin:0">
-        <video controls preload="none" playsinline poster="images/poster-fuego-y-agua.webp">
-          <source src="videos/reel-fuego-y-agua.mp4" type="video/mp4">
-          Tu navegador no puede reproducir este video.
-        </video>
-        <h3>El fuego y el agua</h3>
-        <p>El 24 % de los focos de 2026 cayó en zonas que producen agua.</p>
-        <span class="badge">Voz generada con IA</span>
-      </figure>
-    </div>
   </section>
 
   <section id="dashboard">
